@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1512">
+  <title>Rumah Murah Se-Malang Raya — Temukan Rumah yang Tepat</title>
+  <meta name="description" content="Jelajahi pilihan rumah di Malang Raya dan konsultasikan kebutuhan properti langsung melalui WhatsApp.">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://wa.me">
+  <style type="text/tailwindcss">
+    @theme {
+      --color-forest: #10251d;
+      --color-forest-2: #18382a;
+      --color-lime: #c9f36b;
+      --color-paper: #f6f7f2;
+      --color-muted: #66736b;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .glass { background: rgba(13, 31, 24, .78); backdrop-filter: blur(14px); }
+    .card-image img { transition: transform .55s cubic-bezier(.2,.7,.2,1); }
+    .property-card:hover .card-image img { transform: scale(1.055); }
+    .focus-ring:focus-visible { outline: 3px solid #c9f36b; outline-offset: 3px; }
+    .hide-card { display: none !important; }
+  </style>
+</head>
+<body class="bg-paper text-slate-900 antialiased">
+  <div class="bg-lime px-4 py-2 text-center text-xs font-extrabold tracking-wide text-forest">
+    KATALOG DEMO • Detail unit, harga, dan ketersediaan perlu dikonfirmasi sebelum dipublikasikan
+  </div>
+
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-forest text-white">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+      <a href="#beranda" class="flex items-center gap-3 focus-ring rounded-xl">
+        <span class="grid h-11 w-11 place-items-center rounded-2xl bg-lime text-sm font-black text-forest">RM</span>
+        <span class="leading-tight">
+          <span class="block text-sm font-black tracking-tight sm:text-base">RUMAH MURAH</span>
+          <span class="block text-[10px] font-bold tracking-[.22em] text-white/65">SE-MALANG RAYA</span>
+        </span>
+      </a>
+      <nav class="hidden items-center gap-7 text-sm font-semibold text-white/75 md:flex">
+        <a class="transition hover:text-lime" href="#katalog">Katalog rumah</a>
+        <a class="transition hover:text-lime" href="#proses">Cara konsultasi</a>
+        <a class="transition hover:text-lime" href="#faq">FAQ</a>
+      </nav>
+      <a data-wa="header" href="#" class="focus-ring inline-flex items-center gap-2 rounded-full bg-lime px-4 py-2.5 text-xs font-black text-forest transition hover:bg-white sm:text-sm">
+        Tanya via WhatsApp <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="beranda" class="relative isolate overflow-hidden bg-forest text-white">
+      <div class="absolute inset-0 -z-10 opacity-25">
+        <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85" alt="">
+      </div>
+      <div class="absolute inset-0 -z-10 bg-gradient-to-r from-forest via-forest/95 to-forest/50"></div>
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-[.95fr_1.05fr] lg:px-8 lg:py-24">
+        <div>
+          <p class="mb-5 inline-flex items-center gap-2 rounded-full border border-lime/30 bg-white/5 px-3 py-2 text-[10px] font-black uppercase tracking-[.2em] text-lime sm:text-xs">
+            <span class="h-2 w-2 rounded-full bg-lime"></span> Temukan hunian di Malang Raya
+          </p>
+          <h1 class="max-w-2xl text-4xl font-black leading-[1.02] tracking-[-.055em] sm:text-5xl lg:text-7xl">
+            Rumah yang tepat dimulai dari <span class="text-lime">pilihan yang jelas.</span>
+          </h1>
+          <p class="mt-6 max-w-xl text-base leading-7 text-white/75 sm:text-lg">
+            Jelajahi inspirasi hunian, sampaikan kebutuhan dan anggaran, lalu konsultasikan pilihan rumah langsung dengan marketing melalui WhatsApp.
+          </p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="#katalog" class="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-lime px-6 py-4 text-sm font-black text-forest transition hover:-translate-y-0.5 hover:bg-white">
+              Cari rumah sekarang <span aria-hidden="true">↓</span>
+            </a>
+            <a data-wa="konsultasi-hero" href="#" class="focus-ring inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-6 py-4 text-sm font-bold text-white transition hover:border-lime hover:text-lime">
+              Konsultasi sesuai budget <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-xs font-semibold text-white/65">
+            <span><span class="mr-2 text-lime">✓</span>Bantu saring pilihan sesuai kebutuhan</span>
+            <span><span class="mr-2 text-lime">✓</span>Tanya harga dan stok terbaru</span>
+          </div>
+        </div>
+        <div class="relative mx-auto w-full max-w-2xl">
+          <div class="absolute -inset-3 rounded-[2rem] border border-white/10"></div>
+          <div class="relative overflow-hidden rounded-[1.6rem] border border-white/15 bg-white/5 shadow-2xl shadow-black/30">
+            <img class="h-[300px] w-full object-cover sm:h-[420px]" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=90" alt="Inspirasi rumah modern dengan taman dan carport" fetchpriority="high">
+            <div class="glass absolute inset-x-3 bottom-3 rounded-2xl border border-white/15 p-4 sm:inset-x-5 sm:bottom-5 sm:p-5">
+              <div class="flex items-end justify-between gap-3">
+                <div>
+                  <p class="text-[10px] font-black uppercase tracking-[.18em] text-lime">Mulai dari kebutuhanmu</p>
+                  <p class="mt-1 text-lg font-black sm:text-2xl">Cari rumah lebih terarah</p>
+                  <p class="mt-1 text-xs text-white/70">Area • Anggaran • Tipe hunian</p>
+                </div>
+                <a href="#filter" class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-lime text-xl font-black text-forest transition hover:scale-105" aria-label="Mulai pilih kriteria">↘</a>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -right-2 -top-4 hidden rounded-2xl border border-white/15 bg-white px-4 py-3 text-forest shadow-xl sm:block">
+            <p class="text-[10px] font-bold uppercase tracking-wider text-muted">Langkah selanjutnya</p>
+            <p class="text-sm font-black">Tanya langsung ke marketing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="filter" class="relative z-10 mx-auto -mt-5 max-w-7xl px-4 sm:px-6 lg:px-8">
+      <form id="filter-form" class="grid gap-3 rounded-3xl border border-slate-200 bg-white p-4 shadow-xl shadow-slate-900/5 sm:grid-cols-2 sm:p-5 lg:grid-cols-[1fr_1fr_1fr_auto] lg:items-end">
+        <div>
+          <label for="area" class="mb-2 block text-[10px] font-black uppercase tracking-[.15em] text-muted">Area yang dicari</label>
+          <select id="area" class="focus-ring w-full rounded-xl border border-slate-200 bg-paper px-3 py-3.5 text-sm font-semibold text-slate-800">
+            <option value="all">Semua area</option><option value="Kota Malang">Kota Malang</option><option value="Kabupaten Malang">Kabupaten Malang</option><option value="Kota Batu">Kota Batu</option>
+          </select>
+        </div>
+        <div>
+          <label for="budget" class="mb-2 block text-[10px] font-black uppercase tracking-[.15em] text-muted">Anggaran (contoh filter)</label>
+          <select id="budget" class="focus-ring w-full rounded-xl border border-slate-200 bg-paper px-3 py-3.5 text-sm font-semibold text-slate-800">
+            <option value="all">Semua anggaran</option><option value="300">Hingga Rp300 juta*</option><option value="500">Rp300–500 juta*</option><option value="above">Di atas Rp500 juta*</option>
+          </select>
+        </div>
+        <div>
+          <label for="type" class="mb-2 block text-[10px] font-black uppercase tracking-[.15em] text-muted">Tipe rumah</label>
+          <select id="type" class="focus-ring w-full rounded-xl border border-slate-200 bg-paper px-3 py-3.5 text-sm font-semibold text-slate-800">
+            <option value="all">Semua tipe</option><option value="1 lantai">1 lantai</option><option value="2 lantai">2 lantai</option>
+          </select>
+        </div>
+        <button type="submit" class="focus-ring rounded-full bg-forest px-6 py-3.5 text-sm font-black text-white transition hover:bg-forest-2">Tampilkan pilihan ↗</button>
+      </form>
+      <p class="mt-3 px-1 text-xs text-muted">Filter ini hanya mendemonstrasikan interaksi; sesuaikan pilihan dan data dengan listing aktual.</p>
+    </section>
+
+    <section id="katalog" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <div class="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+        <div>
+          <p class="text-[10px] font-black uppercase tracking-[.2em] text-emerald-800">Katalog inspirasi</p>
+          <h2 class="mt-2 text-3xl font-black tracking-[-.05em] sm:text-4xl lg:text-5xl">Temukan gaya rumahmu.</h2>
+        </div>
+        <p class="max-w-lg text-sm leading-6 text-muted">Contoh kartu di bawah memperlihatkan struktur katalog yang dapat diisi dengan unit asli, informasi yang terverifikasi, dan tombol tanya per properti.</p>
+      </div>
+      <div class="mb-6 flex flex-wrap items-center justify-between gap-3">
+        <p id="result-count" class="text-sm font-bold text-slate-700">3 contoh listing</p>
+        <span class="rounded-full bg-amber-100 px-3 py-1.5 text-[10px] font-black uppercase tracking-wide text-amber-900">Data contoh — bukan penawaran aktual</span>
+      </div>
+      <div id="property-grid" class="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+        <article class="property-card overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl" data-area="Kota Malang" data-price="280" data-type="1 lantai">
+          <div class="card-image relative h-60 overflow-hidden bg-slate-200">
+            <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85" alt="Inspirasi rumah modern satu lantai" loading="lazy">
+            <span class="absolute left-4 top-4 rounded-full bg-white px-3 py-1.5 text-[10px] font-black uppercase tracking-wide text-forest">Contoh demo</span>
+            <span class="absolute bottom-4 right-4 rounded-full bg-forest/90 px-3 py-1.5 text-xs font-bold text-white">Kota Malang*</span>
+          </div>
+          <div class="p-5">
+            <p class="text-[10px] font-black uppercase tracking-[.15em] text-emerald-800">Rumah 1 lantai</p>
+            <h3 class="mt-2 text-xl font-black tracking-tight">Hunian Modern</h3>
+            <p class="mt-2 text-sm text-muted">Contoh layout untuk foto, area, spesifikasi, dan ringkasan unit.</p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs font-semibold text-slate-600"><span class="rounded-lg bg-paper px-3 py-2">2 KT*</span><span class="rounded-lg bg-paper px-3 py-2">1 KM*</span><span class="rounded-lg bg-paper px-3 py-2">Carport*</span></div>
+            <div class="mt-5 border-t border-slate-100 pt-4"><p class="text-[10px] font-bold uppercase tracking-wider text-muted">Harga / ketersediaan</p><p class="mt-1 text-lg font-black">Konfirmasi ke marketing</p>
+              <button type="button" data-property="Hunian Modern — contoh Kota Malang" class="property-wa focus-ring mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-forest px-4 py-3.5 text-sm font-black text-white transition hover:bg-forest-2">Tanya unit ini via WhatsApp ↗</button>
+            </div>
+          </div>
+        </article>
+        <article class="property-card overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl" data-area="Kabupaten Malang" data-price="420" data-type="2 lantai">
+          <div class="card-image relative h-60 overflow-hidden bg-slate-200">
+            <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Inspirasi rumah dua lantai" loading="lazy">
+            <span class="absolute left-4 top-4 rounded-full bg-white px-3 py-1.5 text-[10px] font-black uppercase tracking-wide text-forest">Contoh demo</span>
+            <span class="absolute bottom-4 right-4 rounded-full bg-forest/90 px-3 py-1.5 text-xs font-bold text-white">Kabupaten Malang*</span>
+          </div>
+          <div class="p-5">
+            <p class="text-[10px] font-black uppercase tracking-[.15em] text-emerald-800">Rumah 2 lantai</p>
+            <h3 class="mt-2 text-xl font-black tracking-tight">Rumah Keluarga</h3>
+            <p class="mt-2 text-sm text-muted">Contoh layout untuk keluarga yang mencari ruang lebih lega.</p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs font-semibold text-slate-600"><span class="rounded-lg bg-paper px-3 py-2">3 KT*</span><span class="rounded-lg bg-paper px-3 py-2">2 KM*</span><span class="rounded-lg bg-paper px-3 py-2">2 lantai*</span></div>
+            <div class="mt-5 border-t border-slate-100 pt-4"><p class="text-[10px] font-bold uppercase tracking-wider text-muted">Harga / ketersediaan</p><p class="mt-1 text-lg font-black">Konfirmasi ke marketing</p>
+              <button type="button" data-property="Rumah Keluarga — contoh Kabupaten Malang" class="property-wa focus-ring mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-forest px-4 py-3.5 text-sm font-black text-white transition hover:bg-forest-2">Tanya unit ini via WhatsApp ↗</button>
+            </div>
+          </div>
+        </article>
+        <article class="property-card overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl" data-area="Kota Batu" data-price="650" data-type="2 lantai">
+          <div class="card-image relative h-60 overflow-hidden bg-slate-200">
+            <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Inspirasi rumah kontemporer dengan taman" loading="lazy">
+            <span class="absolute left-4 top-4 rounded-full bg-white px-3 py-1.5 text-[10px] font-black uppercase tracking-wide text-forest">Contoh demo</span>
+            <span class="absolute bottom-4 right-4 rounded-full bg-forest/90 px-3 py-1.5 text-xs font-bold text-white">Kota Batu*</span>
+          </div>
+          <div class="p-5">
+            <p class="text-[10px] font-black uppercase tracking-[.15em] text-emerald-800">Rumah 2 lantai</p>
+            <h3 class="mt-2 text-xl font-black tracking-tight">Hunian Kontemporer</h3>
+            <p class="mt-2 text-sm text-muted">Contoh layout untuk hunian dengan tampilan modern.</p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs font-semibold text-slate-600"><span class="rounded-lg bg-paper px-3 py-2">3 KT*</span><span class="rounded-lg bg-paper px-3 py-2">2 KM*</span><span class="rounded-lg bg-paper px-3 py-2">Taman*</span></div>
+            <div class="mt-5 border-t border-slate-100 pt-4"><p class="text-[10px] font-bold uppercase tracking-wider text-muted">Harga / ketersediaan</p><p class="mt-1 text-lg font-black">Konfirmasi ke marketing</p>
+              <button type="button" data-property="Hunian Kontemporer — contoh Kota Batu" class="property-wa focus-ring mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-forest px-4 py-3.5 text-sm font-black text-white transition hover:bg-forest-2">Tanya unit ini via WhatsApp ↗</button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div id="empty-state" class="hidden rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center">
+        <p class="font-black">Belum ada contoh yang sesuai filter.</p><p class="mt-2 text-sm text-muted">Coba ubah area, anggaran, atau tipe rumah.</p>
+      </div>
+      <p class="mt-5 text-xs leading-5 text-muted">*Nama unit, area, harga filter, dan spesifikasi di atas bersifat dummy untuk mendemonstrasikan desain. Foto adalah ilustrasi, bukan jaminan unit yang dijual.</p>
+    </section>
+
+    <section id="proses" class="bg-[#e9eee5]">
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div class="self-center">
+          <p class="text-[10px] font-black uppercase tracking-[.2em] text-emerald-900">Dibuat untuk memudahkan langkah berikutnya</p>
+          <h2 class="mt-3 text-3xl font-black leading-tight tracking-[-.05em] sm:text-5xl">Kurangi kebingungan. Arahkan ke konsultasi.</h2>
+          <p class="mt-5 max-w-xl text-sm leading-7 text-slate-600">Satu halaman terstruktur membantu calon pembeli membandingkan pilihan dan mengirim pertanyaan dengan konteks. Dampak ROI tetap perlu diukur dari trafik, klik WhatsApp, percakapan berkualitas, jadwal survei, dan transaksi aktual.</p>
+          <a data-wa="proses" href="#" class="focus-ring mt-7 inline-flex items-center gap-2 rounded-full bg-forest px-6 py-4 text-sm font-black text-white transition hover:bg-forest-2">Diskusikan kebutuhan rumah ↗</a>
+        </div>
+        <div class="grid gap-4">
+          <div class="rounded-2xl border border-white bg-white/80 p-5 sm:p-6"><span class="mb-4 grid h-10 w-10 place-items-center rounded-xl bg-lime text-lg font-black text-forest">01</span><h3 class="font-black">Pilih berdasarkan kebutuhan</h3><p class="mt-2 text-sm leading-6 text-muted">Filter area dan tipe membantu calon pembeli memulai pencarian lebih terarah.</p></div>
+          <div class="rounded-2xl border border-white bg-white/80 p-5 sm:p-6"><span class="mb-4 grid h-10 w-10 place-items-center rounded-xl bg-lime text-lg font-black text-forest">02</span><h3 class="font-black">Bertanya dengan konteks unit</h3><p class="mt-2 text-sm leading-6 text-muted">Tombol setiap kartu menyiapkan pesan WhatsApp berisi nama listing yang dipilih.</p></div>
+          <div class="rounded-2xl border border-white bg-white/80 p-5 sm:p-6"><span class="mb-4 grid h-10 w-10 place-items-center rounded-xl bg-lime text-lg font-black text-forest">03</span><h3 class="font-black">Ukur hasil, bukan hanya klik</h3><p class="mt-2 text-sm leading-6 text-muted">Catat chat masuk, prospek layak, survei, dan closing untuk menghitung biaya per prospek serta ROI.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[.75fr_1.25fr]">
+        <div><p class="text-[10px] font-black uppercase tracking-[.2em] text-emerald-800">Pertanyaan umum</p><h2 class="mt-3 text-3xl font-black tracking-[-.05em] sm:text-4xl">Informasi yang penting sebelum survei.</h2></div>
+        <div class="space-y-3">
+          <details class="group rounded-2xl border border-slate-200 bg-white p-5"><summary class="focus-ring cursor-pointer list-none font-extrabold">Bagaimana cara memastikan harga terbaru?<span class="float-right text-muted transition group-open:rotate-45">＋</span></summary><p class="mt-3 text-sm leading-6 text-muted">Tanyakan langsung melalui WhatsApp. Harga, promo, dan ketersediaan harus dikonfirmasi kepada marketing sebelum membuat keputusan.</p></details>
+          <details class="group rounded-2xl border border-slate-200 bg-white p-5"><summary class="focus-ring cursor-pointer list-none font-extrabold">Bisakah mengatur jadwal survei?<span class="float-right text-muted transition group-open:rotate-45">＋</span></summary><p class="mt-3 text-sm leading-6 text-muted">Hubungi marketing untuk mendiskusikan lokasi, waktu, dan unit yang ingin dilihat.</p></details>
+          <details class="group rounded-2xl border border-slate-200 bg-white p-5"><summary class="focus-ring cursor-pointer list-none font-extrabold">Apakah semua listing di halaman ini tersedia?<span class="float-right text-muted transition group-open:rotate-45">＋</span></summary><p class="mt-3 text-sm leading-6 text-muted">Tidak. Ini demo desain dengan data contoh. Listing aktual harus menggantikan semua kartu demo sebelum halaman dipublikasikan.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 pb-16 sm:px-6 lg:px-8">
+      <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 rounded-[2rem] bg-forest p-7 text-white sm:p-10 lg:flex-row lg:items-center lg:p-12">
+        <div class="max-w-2xl"><p class="text-[10px] font-black uppercase tracking-[.2em] text-lime">Langkah selanjutnya</p><h2 class="mt-3 text-3xl font-black leading-tight tracking-[-.05em] sm:text-4xl">Ceritakan rumah seperti apa yang kamu cari.</h2><p class="mt-3 text-sm leading-6 text-white/70">Sampaikan area, kisaran anggaran, dan kebutuhan utama. Marketing dapat membantu mengecek pilihan yang sesuai.</p></div>
+        <a data-wa="footer" href="#" class="focus-ring inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-lime px-6 py-4 text-sm font-black text-forest transition hover:bg-white">Mulai konsultasi WhatsApp ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#07110d] px-4 py-7 text-white/60 sm:px-6 lg:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 text-xs sm:flex-row sm:items-center">
+      <div><p class="font-black tracking-wide text-white">RUMAH MURAH SE-MALANG RAYA</p><p class="mt-1">Konsep demo katalog properti oleh RYO DIGITAL.</p></div>
+      <p>Data listing dan foto perlu dikonfirmasi sebelum publikasi.</p>
+    </div>
+  </footer>
+
+  <a data-wa="floating" href="#" class="focus-ring fixed bottom-4 right-4 z-50 inline-flex items-center gap-2 rounded-full bg-lime px-5 py-4 text-sm font-black text-forest shadow-xl shadow-black/20 transition hover:scale-[1.03]">
+    <svg aria-hidden="true" viewBox="0 0 24 24" class="h-5 w-5 fill-current"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.2 1.6 6L0 24l6.4-1.7a11.9 11.9 0 0 0 5.7 1.5h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.2-3.5-8.5ZM12.1 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.3-.4a9.8 9.8 0 0 1-1.5-5.2c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.3 9.9-9.6 9.9Zm5.4-7.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.2-.4-2.3-1.4-.8-.7-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4Z"/></svg>
+    Tanya via WhatsApp
+  </a>
+
+  <script>
+    // Nomor kontak diambil dari profil Google Maps yang diberikan pemilik demo.
+    // Ganti jika nomor marketing yang benar berbeda.
+    const WHATSAPP_NUMBER = "6289682973190";
+    function whatsappUrl(message) {
+      return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+    }
+    const generalMessage = "Halo, saya melihat katalog Rumah Murah Se-Malang Raya. Saya ingin konsultasi pilihan rumah. Area yang dicari: ____. Anggaran: ____. Tipe rumah: ____. Mohon info pilihan yang tersedia.";
+    document.querySelectorAll("[data-wa]").forEach(link => {
+      link.href = whatsappUrl(generalMessage);
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    });
+    document.querySelectorAll(".property-wa").forEach(button => {
+      button.addEventListener("click", () => {
+        const message = "Halo, saya melihat katalog demo Rumah Murah Se-Malang Raya dan ingin bertanya tentang " + button.dataset.property + ". Mohon info unit aktual yang tersedia, harga terbaru, lokasi, spesifikasi, dan jadwal survei.";
+        window.open(whatsappUrl(message), "_blank", "noopener,noreferrer");
+      });
+    });
+    const form = document.getElementById("filter-form");
+    const cards = [...document.querySelectorAll(".property-card")];
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+      const area = document.getElementById("area").value;
+      const budget = document.getElementById("budget").value;
+      const type = document.getElementById("type").value;
+      let visible = 0;
+      cards.forEach(card => {
+        const price = Number(card.dataset.price);
+        let match = (area === "all" || card.dataset.area === area) && (type === "all" || card.dataset.type === type);
+        if (budget === "300") match = match && price <= 300;
+        else if (budget === "500") match = match && price > 300 && price <= 500;
+        else if (budget === "above") match = match && price > 500;
+        card.classList.toggle("hide-card", !match);
+        if (match) visible++;
+      });
+      document.getElementById("result-count").textContent = visible + " contoh listing ditampilkan";
+      document.getElementById("empty-state").classList.toggle("hidden", visible !== 0);
+      document.getElementById("katalog").scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
